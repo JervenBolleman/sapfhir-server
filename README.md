@@ -37,12 +37,10 @@ curl -H 'accept: application/sparql-results+json'  \
 
 # Build docker image
 
-Depends on a yet to be released spring-boot extension for rdf4j (schedulled for [rdf4j 3.7.0](https://github.com/eclipse/rdf4j/pull/2905)
-
 
 ```
-mvn spring-boot:build-iamge Dspring-boot.build-image.imageName=jerven/sapfhir-server
-docker push jerve/sapfhir-server
+mvn spring-boot:build-image -Dspring-boot.build-image.imageName=jerven/sapfhir-server
+docker push jerven/sapfhir-server
 ```
 
 
